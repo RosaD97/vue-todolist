@@ -27,19 +27,27 @@ createApp({
         }
     },
     methods: {
-        elimina(index){
-            this.list.splice(this.list[index], 1)
+        elimina(i) {
+            this.list.splice(this.list[i], 1)
         },
-        addTask(){
+        addTask() {
             console.log('hei')
-            if(this.add.length === 0) return;
-                this.list.push({
-                    text: this.add,
-                    done: false
-                });
-                
-                this.add = '';
-            
+            if (this.add.length === 0) return;
+            this.list.push({
+                text: this.add,
+                done: false
+            });
+
+            this.add = '';
+        },
+        addClass(i) {
+            if (this.list[i].done === true) {
+                this.list[i].done = false;
+            }
+            else if (this.list[i].done !== true){
+                this.list[i].done = true;
+            }
+
         }
-    }
+}
 }).mount('#app');
