@@ -6,6 +6,44 @@
 }
 
 /* main */
+body{
+    background-color: #e2f4fe;
+}
 .barred{
     text-decoration: line-through;
+    background-color: #656e97;
+}
+.ms_container{
+    height: 800px;
+    width: 900px;
+    border: 1px solid #fff;
+    background-color: #222d67;
+    box-shadow: 5px 5px 10px 0px #000000;
+}
+.ms_row{
+    height: 400px;
+    width: 800px;
+    background-color: #bae4fa;
+    box-shadow: 5px 5px 10px 0px #000000;
+    border: 3px solid #fff;
+}
+h1{
+    font-family: 'Noto Serif Lao', serif;;
+}
+.ms_btn{
+    background-color: #222d67;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.ms_btn:hover{
+    background-color: #e2f4fe;
+    box-shadow: 2px -1px 21px 0px #222d67;
+}
+.fa-trash:hover{
+    color: rgb(163, 0, 0);
+    cursor: pointer;
+}
+.fa-brands, h1{
+    font-size: 32px;
+    color: #222d67;
 }

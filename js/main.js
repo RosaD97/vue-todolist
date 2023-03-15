@@ -7,6 +7,7 @@ createApp({
         return {
             add: '',
             title: 'VUE TO DO LIST',
+            empty: 'Aggiungi una nuova task',
             list: [
                 {
                     text: 'Fare la spesa',
@@ -15,7 +16,7 @@ createApp({
                 },
                 {
                     text: 'Comprare il latte',
-                    done: true,
+                    done: false,
 
                 },
                 {
