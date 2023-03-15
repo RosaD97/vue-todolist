@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            add: '',
             title: 'VUE TO DO LIST',
             list: [
                 {
@@ -14,7 +15,7 @@ createApp({
                 },
                 {
                     text: 'Comprare il latte',
-                    done: false,
+                    done: true,
 
                 },
                 {
@@ -26,6 +27,8 @@ createApp({
         }
     },
     methods: {
-
+        elimina(index){
+            this.list.splice(this.list[index], 1)
+        }
     }
 }).mount('#app');

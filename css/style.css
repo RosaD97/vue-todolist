@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: aqua;
+/* main */
+.barred{
+    text-decoration: line-through;
 }
