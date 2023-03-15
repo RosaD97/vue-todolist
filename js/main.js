@@ -29,6 +29,17 @@ createApp({
     methods: {
         elimina(index){
             this.list.splice(this.list[index], 1)
+        },
+        addTask(){
+            console.log('hei')
+            if(this.add.length === 0) return;
+                this.list.push({
+                    text: this.add,
+                    done: false
+                });
+                
+                this.add = '';
+            
         }
     }
 }).mount('#app');
