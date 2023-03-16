@@ -42,13 +42,12 @@ createApp({
             this.add = '';
         },
         addClass(i) {
-            if (this.list[i].done === true) {
+            if (this.list[i].done) {
                 this.list[i].done = false;
             }
-            else if (this.list[i].done !== true){
+            else {
                 this.list[i].done = true;
             }
-
         }
 }
 }).mount('#app');
